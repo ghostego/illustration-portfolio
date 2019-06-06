@@ -12,13 +12,15 @@ const App = () => {
     <div>
       <Router>
         <Sidebar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/gallery" exact component={Gallery} />
-          <Route path="/gallery/:id" exact component={Image} />
-        </Switch>
+        <div className="content">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" exact component={About} />
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/gallery" exact component={Gallery} />
+            <Route path="/gallery/:id" exact component={Image} />
+          </Switch>
+        </div>
       </Router>
     </div>
   );

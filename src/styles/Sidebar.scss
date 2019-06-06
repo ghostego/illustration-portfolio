@@ -1,0 +1,23 @@
+.sidebar {
+  width: 30%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: pink;
+}
+
+.sidebar__link-list {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style-type: none;
+}
+
+.sidebar__link-item {
+  padding: 25px 0;
+
+  a {
+    text-decoration: none;
+  }
+}

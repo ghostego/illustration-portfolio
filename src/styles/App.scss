@@ -1,0 +1,27 @@
+@import "Sidebar";
+
+body {
+  margin: 0;
+}
+
+.content {
+  margin-left: 30%;
+  background-image: url("/images/gif/becameone.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.content__container {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 10px 25px;
+}
