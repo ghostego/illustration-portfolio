@@ -1,0 +1,11 @@
+.gallery__grid-item {
+  width: 33%;
+  padding-top: 33%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  img {
+    max-width: 100%;
+  }
+}

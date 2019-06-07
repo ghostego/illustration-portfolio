@@ -1,0 +1,16 @@
+{
+  "images": [
+    {
+      "title": "Bulbasaur",
+      "path": "/images/bw/bulbasaur.jpg",
+      "tags": ["Black and White", "bw"],
+      "id": 0
+    },
+    {
+      "title": "Oddish",
+      "path": "/images/bw/oddish.jpg",
+      "tags": ["Black and White", "bw"],
+      "id": 1
+    }
+  ]
+}
