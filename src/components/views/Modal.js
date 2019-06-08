@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import history from "../../history";
 
 const Image = props => {
-  if (!props.image) {
+  const showHideClassName = props.show
+    ? "modal display-block"
+    : "modal display-none";
+  if (props.show === false) {
     return false;
   }
   var background = {
@@ -11,8 +13,8 @@ const Image = props => {
   };
   return ReactDOM.createPortal(
     <div
-      onClick={() => history.push("/gallery")}
-      className="gallery__modal-background"
+      onClick={() => props.hideModal()}
+      className={`gallery__modal-background ${showHideClassName}`}
     >
       <div onClick={e => e.stopPropagation()} className="">
         <div className="gallery__modal-image" style={background} />

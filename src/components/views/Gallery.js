@@ -1,41 +1,51 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Image from "./Image";
-import image from "../../data/image.json";
-import history from "../../history";
+import Modal from "./Modal";
 import imageObject from "../../data/imageObject";
 
 class Gallery extends React.Component {
+  state = { currentImage: null, currentCollection: null, showModal: false };
+
+  showModal = id => {
+    this.setState({ showModal: true, currentImage: id });
+  };
+
+  hideModal = () => {
+    this.setState({ showModal: false, currentImage: null });
+  };
+
+  getImages = () => {};
+
+  getImage = () => {};
+
   renderGallery() {
+    console.log(imageObject["images"]);
     const imageArray = Object.values(imageObject)[0];
     return imageArray.map((image, i) => {
       const imageBackground = {
         backgroundImage: `url(${image.path})`
       };
       return (
-        <Link to={`/gallery/${i}`}>
-          <div className="gallery__grid-item" style={imageBackground} />
-        </Link>
+        <div
+          className="gallery__grid-item"
+          key={image.id}
+          style={imageBackground}
+          onClick={() => this.showModal(image.id)}
+        />
       );
     });
   }
 
-  renderImage() {
-    if (this.props.match.params.id) {
-      var id = this.props.match.params.id;
-      if (!image[id]) {
-        history.push("/gallery");
-        return false;
-      }
-      return <Image image={image[id]} />;
-    }
-    console.log("hello");
-
-    return this.renderGallery();
-  }
-
   render() {
-    return <div className="content__container">{this.renderImage()}</div>;
+    return (
+      <div className="content__container">
+        {this.renderGallery()}
+        <Modal
+          image={imageObject["images"][this.state.currentImage]}
+          show={this.state.showModal}
+          hideModal={this.hideModal}
+        />
+      </div>
+    );
   }
 }
 
