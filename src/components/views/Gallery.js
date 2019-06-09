@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "./Modal";
 import imageObject from "../../data/imageObject";
+import LazyLoad from "react-lazyload";
 
 class Gallery extends React.Component {
   state = { currentImage: null, currentCategory: "all", showModal: false };
@@ -53,12 +54,14 @@ class Gallery extends React.Component {
           backgroundImage: `url(${image.path})`
         };
         return (
-          <div
-            className="gallery__grid-item"
-            key={image.id}
-            style={imageBackground}
-            onClick={() => this.showModal(image.id)}
-          />
+          <LazyLoad>
+            <div
+              className="gallery__grid-item"
+              key={image.id}
+              style={imageBackground}
+              onClick={() => this.showModal(image.id)}
+            />
+          </LazyLoad>
         );
       }
     });
@@ -66,17 +69,20 @@ class Gallery extends React.Component {
 
   render() {
     return (
-      <div className="content__container">
-        {this.renderGallery()}
-        <Modal
-          image={imageObject["images"][this.state.currentImage]}
-          show={this.state.showModal}
-          hideModal={this.hideModal}
-          id={this.state.currentImage}
-          nextImage={this.nextImage}
-          prevImage={this.prevImage}
-        />
-      </div>
+      <>
+        <div className="content__background" />
+        <div className="content__container">
+          {this.renderGallery()}
+          <Modal
+            image={imageObject["images"][this.state.currentImage]}
+            show={this.state.showModal}
+            hideModal={this.hideModal}
+            id={this.state.currentImage}
+            nextImage={this.nextImage}
+            prevImage={this.prevImage}
+          />
+        </div>
+      </>
     );
   }
 }
