@@ -8,7 +8,7 @@
 }
 
 .gallery__modal-image {
-  width: 75%;
+  width: 50%;
   height: 75%;
   position: absolute;
   top: 50%;
@@ -36,11 +36,11 @@
     }
   }
   &-next {
-    right: 0;
+    right: -53px;
     transform: translateX(50%);
   }
   &-prev {
-    left: 0;
+    left: -65px;
     transform: translateX(-50%);
   }
 }
