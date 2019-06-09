@@ -8,8 +8,8 @@
 }
 
 .gallery__modal-image {
-  width: 50%;
-  height: 50%;
+  width: 75%;
+  height: 75%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,4 +17,30 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.gallery__modal {
+  &-next,
+  &-prev {
+    top: 50%;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: #fff;
+      color: fuchsia;
+    }
+  }
+  &-next {
+    right: 0;
+    transform: translateX(50%);
+  }
+  &-prev {
+    left: 0;
+    transform: translateX(-50%);
+  }
 }

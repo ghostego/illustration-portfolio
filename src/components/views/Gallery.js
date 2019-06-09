@@ -19,12 +19,19 @@ class Gallery extends React.Component {
   };
 
   nextImage = () => {
+    this.setState({ currentImage: this.nextID() });
+  };
+
+  nextID = () => {
     const nextID = this.state.currentImage + 1;
-    if (imageObject["images"][nextID]) {
-      this.setState({ currentImage: nextID });
-    } else {
+    return nextID;
+  };
+
+  nextImageExist = () => {
+    if (!imageObject["images"][this.nextID()]) {
       return false;
     }
+    return true;
   };
 
   getCategory = () => {
@@ -34,18 +41,25 @@ class Gallery extends React.Component {
     }
   };
 
-  prevImage = () => {
+  prevID = () => {
     const prevID = this.state.currentImage - 1;
-    if (imageObject["images"][prevID]) {
-      this.setState({ currentImage: prevID });
-    } else {
+    return prevID;
+  };
+
+  prevImage = () => {
+    this.setState({ currentImage: this.prevID() });
+  };
+
+  prevImageExist = () => {
+    if (!imageObject["images"][this.prevID()]) {
       return false;
     }
+    return true;
   };
 
   renderGallery() {
     const imageArray = Object.values(imageObject)[0];
-    return imageArray.map((image, i) => {
+    return imageArray.map(image => {
       if (
         image.category === this.state.currentCategory ||
         this.state.currentCategory === "all"
@@ -63,6 +77,8 @@ class Gallery extends React.Component {
             />
           </LazyLoad>
         );
+      } else {
+        return false;
       }
     });
   }
@@ -79,7 +95,9 @@ class Gallery extends React.Component {
             hideModal={this.hideModal}
             id={this.state.currentImage}
             nextImage={this.nextImage}
+            nextImageExist={this.nextImageExist()}
             prevImage={this.prevImage}
+            prevImageExist={this.prevImageExist()}
           />
         </div>
       </>
