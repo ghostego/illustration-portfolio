@@ -20,4 +20,18 @@
   a {
     text-decoration: none;
   }
+  &--hover {
+    display: none;
+    position: absolute;
+    width: 200px;
+
+    ul {
+      padding: 10px 20px;
+      list-style-type: none;
+    }
+  }
+
+  &--show {
+    display: block !important;
+  }
 }
