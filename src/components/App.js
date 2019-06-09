@@ -18,7 +18,7 @@ const App = () => {
             <Route path="/about" exact component={About} />
             <Route path="/contact" exact component={Contact} />
             <Route path="/gallery" exact component={Gallery} />
-            <Route path="/gallery/:id" exact component={Gallery} />
+            <Route path="/gallery/:category" exact component={Gallery} />
           </Switch>
         </div>
       </Router>

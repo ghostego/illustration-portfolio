@@ -3,7 +3,11 @@ import Modal from "./Modal";
 import imageObject from "../../data/imageObject";
 
 class Gallery extends React.Component {
-  state = { currentImage: null, currentCollection: null, showModal: false };
+  state = { currentImage: null, currentCategory: "all", showModal: false };
+  componentDidMount() {
+    this.getCategory();
+    console.log(this.state);
+  }
 
   showModal = id => {
     this.setState({ showModal: true, currentImage: id });
@@ -13,25 +17,50 @@ class Gallery extends React.Component {
     this.setState({ showModal: false, currentImage: null });
   };
 
-  getImages = () => {};
+  nextImage = () => {
+    const nextID = this.state.currentImage + 1;
+    if (imageObject["images"][nextID]) {
+      this.setState({ currentImage: nextID });
+    } else {
+      return false;
+    }
+  };
 
-  getImage = () => {};
+  getCategory = () => {
+    const category = this.props.match.params.category;
+    if (this.props.match.params.category) {
+      this.setState({ currentCategory: category });
+    }
+  };
+
+  prevImage = () => {
+    const prevID = this.state.currentImage - 1;
+    if (imageObject["images"][prevID]) {
+      this.setState({ currentImage: prevID });
+    } else {
+      return false;
+    }
+  };
 
   renderGallery() {
-    console.log(imageObject["images"]);
     const imageArray = Object.values(imageObject)[0];
     return imageArray.map((image, i) => {
-      const imageBackground = {
-        backgroundImage: `url(${image.path})`
-      };
-      return (
-        <div
-          className="gallery__grid-item"
-          key={image.id}
-          style={imageBackground}
-          onClick={() => this.showModal(image.id)}
-        />
-      );
+      if (
+        image.category === this.state.currentCategory ||
+        this.state.currentCategory === "all"
+      ) {
+        const imageBackground = {
+          backgroundImage: `url(${image.path})`
+        };
+        return (
+          <div
+            className="gallery__grid-item"
+            key={image.id}
+            style={imageBackground}
+            onClick={() => this.showModal(image.id)}
+          />
+        );
+      }
     });
   }
 
@@ -43,6 +72,9 @@ class Gallery extends React.Component {
           image={imageObject["images"][this.state.currentImage]}
           show={this.state.showModal}
           hideModal={this.hideModal}
+          id={this.state.currentImage}
+          nextImage={this.nextImage}
+          prevImage={this.prevImage}
         />
       </div>
     );
