@@ -4,10 +4,25 @@ import imageObject from "../../data/imageObject";
 import LazyLoad from "react-lazyload";
 
 class Gallery extends React.Component {
-  state = { currentImage: null, currentCategory: "all", showModal: false };
+  state = {
+    currentImage: null,
+    currentCategory: this.props.match.params.category
+      ? this.props.match.params.category
+      : "all",
+    showModal: false
+  };
+
   componentDidMount() {
     this.getCategory();
-    console.log(this.state);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.location.pathname !== this.props.location.pathname) {
+      const nextCategory = nextProps.match.params.category
+        ? nextProps.match.params.category
+        : "all";
+      this.getCategory(nextCategory);
+    }
   }
 
   showModal = id => {
@@ -34,9 +49,11 @@ class Gallery extends React.Component {
     return true;
   };
 
-  getCategory = () => {
-    const category = this.props.match.params.category;
-    if (this.props.match.params.category) {
+  getCategory = nextCategory => {
+    const category = nextCategory
+      ? nextCategory
+      : this.props.match.params.category;
+    if (category) {
       this.setState({ currentCategory: category });
     }
   };
@@ -68,7 +85,7 @@ class Gallery extends React.Component {
           backgroundImage: `url(${image.path})`
         };
         return (
-          <LazyLoad>
+          <LazyLoad key={image.id}>
             <div
               className="gallery__grid-item"
               key={image.id}
