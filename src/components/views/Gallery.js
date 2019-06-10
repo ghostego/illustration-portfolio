@@ -82,7 +82,7 @@ class Gallery extends React.Component {
         this.state.currentCategory === "all"
       ) {
         const imageBackground = {
-          backgroundImage: `url(${image.path})`
+          backgroundImage: `url(${image.bgPath})`
         };
         return (
           <LazyLoad key={image.id}>
