@@ -1,9 +1,10 @@
 import React from "react";
+import ContentBackground from "../ContentBackground";
 
 const Home = () => {
   return (
     <>
-      <div className="content__background" />
+      <ContentBackground />
       <div className="content__container">Hello!</div>
     </>
   );
