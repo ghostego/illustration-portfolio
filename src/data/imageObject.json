@@ -3,384 +3,448 @@
     {
       "title": "Bulbasaur",
       "path": "/images/bw/bulbasaur.jpg",
+      "bgPath": "/images/bw/bg/bulbasaur.jpg",
       "category": "black-and-white",
       "id": 0
     },
     {
       "title": "Oddish",
       "path": "/images/bw/oddish.jpg",
+      "bgPath": "/images/bw/bg/oddish.jpg",
       "category": "black-and-white",
       "id": 1
     },
     {
       "title": "22",
       "path": "/images/bw/img022.jpg",
+      "bgPath": "/images/bw/bg/img022.jpg",
       "category": "black-and-white",
       "id": 2
     },
     {
       "title": "23",
       "path": "/images/bw/img023.jpg",
+      "bgPath": "/images/bw/bg/img023.jpg",
       "category": "black-and-white",
       "id": 3
     },
     {
       "title": "27",
       "path": "/images/bw/img027.jpg",
+      "bgPath": "/images/bw/bg/img027.jpg",
       "category": "black-and-white",
       "id": 4
     },
     {
       "title": "35",
       "path": "/images/bw/img035.jpg",
+      "bgPath": "/images/bw/bg/img035.jpg",
       "category": "black-and-white",
       "id": 5
     },
     {
       "title": "45",
       "path": "/images/bw/img045.jpg",
+      "bgPath": "/images/bw/bg/img045.jpg",
       "category": "black-and-white",
       "id": 6
     },
     {
       "title": "46",
       "path": "/images/bw/img046.jpg",
+      "bgPath": "/images/bw/bg/img046.jpg",
       "category": "black-and-white",
       "id": 7
     },
     {
       "title": "48",
       "path": "/images/bw/img048.jpg",
+      "bgPath": "/images/bw/bg/img048.jpg",
       "category": "black-and-white",
       "id": 8
     },
     {
       "title": "50",
       "path": "/images/bw/img050.jpg",
+      "bgPath": "/images/bw/bg/img050.jpg",
       "category": "black-and-white",
       "id": 9
     },
     {
       "title": "51",
       "path": "/images/bw/img051.jpg",
+      "bgPath": "/images/bw/bg/img051.jpg",
       "category": "black-and-white",
       "id": 10
     },
     {
       "title": "52",
       "path": "/images/bw/img052.jpg",
+      "bgPath": "/images/bw/bg/img052.jpg",
       "category": "black-and-white",
       "id": 11
     },
     {
       "title": "Untitled-1",
       "path": "/images/bw/Untitled-1.jpg",
+      "bgPath": "/images/bw/bg/Untitled-1.jpg",
       "category": "black-and-white",
       "id": 12
     },
     {
       "title": "Untitled-2",
       "path": "/images/bw/Untitled-2.jpg",
+      "bgPath": "/images/bw/bg/Untitled-2.jpg",
       "category": "black-and-white",
       "id": 13
     },
     {
       "title": "Untitled-3",
       "path": "/images/bw/Untitled-3.jpg",
+      "bgPath": "/images/bw/bg/Untitled-3.jpg",
       "category": "black-and-white",
       "id": 14
     },
     {
       "title": "Untitled-4",
       "path": "/images/bw/Untitled-4.jpg",
+      "bgPath": "/images/bw/bg/Untitled-4.jpg",
       "category": "black-and-white",
       "id": 15
     },
     {
       "title": "Untitled-5",
       "path": "/images/bw/Untitled-5.jpg",
+      "bgPath": "/images/bw/bg/Untitled-5.jpg",
       "category": "black-and-white",
       "id": 16
     },
     {
       "title": "Untitled-6",
       "path": "/images/bw/Untitled-6.jpg",
+      "bgPath": "/images/bw/bg/Untitled-6.jpg",
       "category": "black-and-white",
       "id": 17
     },
     {
       "title": "Untitled-7",
       "path": "/images/bw/Untitled-7.jpg",
+      "bgPath": "/images/bw/bg/Untitled-7.jpg",
       "category": "black-and-white",
       "id": 18
     },
     {
       "title": "Untitled-8",
       "path": "/images/bw/Untitled-8.jpg",
+      "bgPath": "/images/bw/bg/Untitled-8.jpg",
       "category": "black-and-white",
       "id": 19
     },
     {
       "title": "Untitled-9",
       "path": "/images/bw/Untitled-9.jpg",
+      "bgPath": "/images/bw/bg/Untitled-9.jpg",
       "category": "black-and-white",
       "id": 20
     },
     {
       "title": "Untitled-10",
       "path": "/images/bw/Untitled-10.jpg",
+      "bgPath": "/images/bw/bg/Untitled-10.jpg",
       "category": "black-and-white",
       "id": 21
     },
     {
       "title": "Untitled-11",
       "path": "/images/bw/Untitled-11.jpg",
+      "bgPath": "/images/bw/bg/Untitled-11.jpg",
       "category": "black-and-white",
       "id": 22
     },
     {
       "title": "Untitled-12",
       "path": "/images/bw/Untitled-12.jpg",
+      "bgPath": "/images/bw/bg/Untitled-12.jpg",
       "category": "black-and-white",
       "id": 23
     },
     {
       "title": "Untitled-13",
       "path": "/images/bw/Untitled-13.jpg",
+      "bgPath": "/images/bw/bg/Untitled-13.jpg",
       "category": "black-and-white",
       "id": 24
     },
     {
       "title": "victreebell",
       "path": "/images/bw/victreebell.jpg",
+      "bgPath": "/images/bw/bg/victreebell.jpg",
       "category": "black-and-white",
       "id": 25
     },
     {
       "title": "img003",
       "path": "/images/color/img003.jpg",
+      "bgPath": "/images/color/bg/img003.jpg",
       "category": "color",
       "id": 26
     },
     {
       "title": "img004",
       "path": "/images/color/img004.jpg",
+      "bgPath": "/images/color/bg/img004.jpg",
       "category": "color",
       "id": 27
     },
     {
       "title": "img006",
       "path": "/images/color/img006.jpg",
+      "bgPath": "/images/color/bg/img006.jpg",
       "category": "color",
       "id": 28
     },
     {
       "title": "img010",
       "path": "/images/color/img010.jpg",
+      "bgPath": "/images/color/bg/img010.jpg",
       "category": "color",
       "id": 29
     },
     {
       "title": "img011",
       "path": "/images/color/img011.jpg",
+      "bgPath": "/images/color/bg/img011.jpg",
       "category": "color",
       "id": 30
     },
     {
       "title": "img013",
       "path": "/images/color/img013.jpg",
+      "bgPath": "/images/color/bg/img013.jpg",
       "category": "color",
       "id": 31
     },
     {
       "title": "img014",
       "path": "/images/color/img014.jpg",
+      "bgPath": "/images/color/bg/img014.jpg",
       "category": "color",
       "id": 32
     },
     {
       "title": "img015",
       "path": "/images/color/img015.jpg",
+      "bgPath": "/images/color/bg/img015.jpg",
       "category": "color",
       "id": 33
     },
     {
       "title": "img016",
       "path": "/images/color/img016.jpg",
+      "bgPath": "/images/color/bg/img016.jpg",
       "category": "color",
       "id": 34
     },
     {
       "title": "img017",
       "path": "/images/color/img017.jpg",
+      "bgPath": "/images/color/bg/img017.jpg",
       "category": "color",
       "id": 35
     },
     {
       "title": "img018",
       "path": "/images/color/img018.jpg",
+      "bgPath": "/images/color/bg/img018.jpg",
       "category": "color",
       "id": 36
     },
     {
       "title": "img019",
       "path": "/images/color/img019.jpg",
+      "bgPath": "/images/color/bg/img019.jpg",
       "category": "color",
       "id": 37
     },
     {
       "title": "img020",
       "path": "/images/color/img020.jpg",
+      "bgPath": "/images/color/bg/img020.jpg",
       "category": "color",
       "id": 38
     },
     {
       "title": "img021",
       "path": "/images/color/img021.jpg",
+      "bgPath": "/images/color/bg/img021.jpg",
       "category": "color",
       "id": 39
     },
     {
       "title": "img024",
       "path": "/images/color/img024.jpg",
+      "bgPath": "/images/color/bg/img024.jpg",
       "category": "color",
       "id": 40
     },
     {
       "title": "img025",
       "path": "/images/color/img025.jpg",
+      "bgPath": "/images/color/bg/img025.jpg",
       "category": "color",
       "id": 41
     },
     {
       "title": "img032",
       "path": "/images/color/img032.jpg",
+      "bgPath": "/images/color/bg/img032.jpg",
       "category": "color",
       "id": 42
     },
     {
       "title": "img049",
       "path": "/images/color/img049.jpg",
+      "bgPath": "/images/color/bg/img049.jpg",
       "category": "color",
       "id": 43
     },
     {
       "title": "img053",
       "path": "/images/color/img053.jpg",
+      "bgPath": "/images/color/bg/img053.jpg",
       "category": "color",
       "id": 44
     },
     {
       "title": "img054",
       "path": "/images/color/img054.jpg",
+      "bgPath": "/images/color/bg/img054.jpg",
       "category": "color",
       "id": 45
     },
     {
       "title": "1",
       "path": "/images/gif/1.gif",
+      "bgPath": "/images/gif/1.gif",
       "category": "gif",
       "id": 46
     },
     {
       "title": "2",
       "path": "/images/gif/2.gif",
+      "bgPath": "/images/gif/2.gif",
       "category": "gif",
       "id": 47
     },
     {
       "title": "3",
       "path": "/images/gif/3.gif",
+      "bgPath": "/images/gif/3.gif",
       "category": "gif",
       "id": 48
     },
     {
       "title": "becameone",
       "path": "/images/gif/becameone.gif",
+      "bgPath": "/images/gif/becameone.gif",
       "category": "gif",
       "id": 49
     },
     {
       "title": "bones",
       "path": "/images/gif/bones.gif",
+      "bgPath": "/images/gif/bones.gif",
       "category": "gif",
       "id": 50
     },
     {
       "title": "cock1",
       "path": "/images/gif/cock1.gif",
+      "bgPath": "/images/gif/cock1.gif",
       "category": "gif",
       "id": 51
     },
     {
       "title": "cock2",
       "path": "/images/gif/cock2.gif",
+      "bgPath": "/images/gif/cock2.gif",
       "category": "gif",
       "id": 52
     },
     {
       "title": "cock3",
       "path": "/images/gif/cock3.gif",
+      "bgPath": "/images/gif/cock3.gif",
       "category": "gif",
       "id": 53
     },
     {
       "title": "crawl1",
       "path": "/images/gif/crawl1.gif",
+      "bgPath": "/images/gif/crawl1.gif",
       "category": "gif",
       "id": 54
     },
     {
       "title": "eyeooze1",
       "path": "/images/gif/eyeooze1.gif",
+      "bgPath": "/images/gif/eyeooze1.gif",
       "category": "gif",
       "id": 55
     },
     {
       "title": "iswhen",
       "path": "/images/gif/iswhen.gif",
+      "bgPath": "/images/gif/iswhen.gif",
       "category": "gif",
       "id": 56
     },
     {
       "title": "thebestcomeback",
       "path": "/images/gif/thebestcomeback.gif",
+      "bgPath": "/images/gif/thebestcomeback.gif",
       "category": "gif",
       "id": 57
     },
     {
       "title": "thesky",
       "path": "/images/gif/thesky.gif",
+      "bgPath": "/images/gif/thesky.gif",
       "category": "gif",
       "id": 58
     },
     {
       "title": "untitled1",
       "path": "/images/gif/untitled1.gif",
+      "bgPath": "/images/gif/untitled1.gif",
       "category": "gif",
       "id": 59
     },
     {
       "title": "untitled1reverse",
       "path": "/images/gif/untitled1reverse.gif",
+      "bgPath": "/images/gif/untitled1reverse.gif",
       "category": "gif",
       "id": 60
     },
     {
       "title": "untitled2",
       "path": "/images/gif/untitled2.gif",
+      "bgPath": "/images/gif/untitled2.gif",
       "category": "gif",
       "id": 61
     },
     {
       "title": "WATERFALLsquare",
       "path": "/images/gif/WATERFALLsquare.gif",
+      "bgPath": "/images/gif/WATERFALLsquare.gif",
       "category": "gif",
       "id": 62
     },
     {
       "title": "youdont",
       "path": "/images/gif/youdont.gif",
+      "bgPath": "/images/gif/youdont.gif",
       "category": "gif",
       "id": 63
     }
