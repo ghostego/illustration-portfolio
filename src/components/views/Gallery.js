@@ -2,6 +2,7 @@ import React from "react";
 import Modal from "./Modal";
 import imageObject from "../../data/imageObject";
 import LazyLoad from "react-lazyload";
+import ContentBackground from "../ContentBackground";
 
 class Gallery extends React.Component {
   state = {
@@ -103,7 +104,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <>
-        <div className="content__background" />
+        <ContentBackground />
         <div className="content__container">
           {this.renderGallery()}
           <Modal
