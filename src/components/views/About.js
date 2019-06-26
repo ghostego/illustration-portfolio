@@ -6,6 +6,7 @@ const About = () => {
     <>
       <ContentBackground />
       <div className="content__container">
+        <h1>About Me</h1>
         <p>
           He meant to write you, but was delayed. Meanwhile, he sent me most of
           the magazines with your articles, and I saw at once, from your
@@ -29,6 +30,14 @@ const About = () => {
           cooperate in such work if you—or organizations known to you—can
           furnish the funds.
         </p>
+        <div class="about__social-row">
+          <a href="https://instagram.com/inlovewithawitch" target="_BLANK">
+            <img src="/images/icons/instagram.png" />
+          </a>
+          <a href="mailto:alexfindlayart@gmail.com" target="_BLANK">
+            <img src="/images/icons/mail.png" />
+          </a>
+        </div>
       </div>
     </>
   );

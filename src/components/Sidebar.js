@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 class Sidebar extends React.Component {
-  state = { galleryHover: false };
+  state = { galleryHover: false, mobileMenu: false };
 
   galleryShow = () => {
     this.setState({ galleryHover: true });
@@ -22,9 +22,6 @@ class Sidebar extends React.Component {
           <li className="sidebar__link-item">
             <Link to="/about">About</Link>
           </li>
-          <li className="sidebar__link-item">
-            <Link to="/contact">Contact</Link>
-          </li>
           <li
             className="sidebar__link-item"
             onMouseOver={() => this.galleryShow()}
@@ -39,9 +36,6 @@ class Sidebar extends React.Component {
             >
               <ul>
                 <li>
-                  <Link to="/gallery">All</Link>
-                </li>
-                <li>
                   <Link to="/gallery/black-and-white">Black and White</Link>
                 </li>
                 <li>
@@ -54,6 +48,88 @@ class Sidebar extends React.Component {
             </div>
           </li>
         </ul>
+        <div className="sidebar__mobile-button">
+          <input
+            type="checkbox"
+            id="sidebar__mobile-checkbox"
+            checked={this.state.mobileMenu}
+            onClick={() => {
+              this.setState({ mobileMenu: !this.state.mobileMenu });
+            }}
+          />
+          <span />
+          <span />
+          <span />
+        </div>
+        <div
+          className={
+            "sidebar__mobile-menu" +
+            (this.state.mobileMenu ? " sidebar__mobile-menu--show" : "")
+          }
+        >
+          <ul>
+            <li>
+              <Link
+                to="/"
+                onClick={() => {
+                  this.setState({ mobileMenu: false });
+                }}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                onClick={() => {
+                  this.setState({ mobileMenu: false });
+                }}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/gallery"
+                onClick={() => {
+                  this.setState({ mobileMenu: false });
+                }}
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/gallery/black-and-white"
+                onClick={() => {
+                  this.setState({ mobileMenu: false });
+                }}
+              >
+                Black and White
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/gallery/color"
+                onClick={() => {
+                  this.setState({ mobileMenu: false });
+                }}
+              >
+                Color
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/gallery/gif"
+                onClick={() => {
+                  this.setState({ mobileMenu: false });
+                }}
+              >
+                GIF
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,13 @@
+.home__container {
+  width: 75%;
+  position: absolute;
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-y: hidden;
+}
+
+.self-portrait {
+  width: 100%;
+  padding-top: 10px;
+}

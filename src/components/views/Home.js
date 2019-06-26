@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <>
       <ContentBackground />
-      <div className="content__container">Hello!</div>
+      <div className="home__container">
+        <img src="/images/selfie.png" className="self-portrait" />
+      </div>
     </>
   );
 };
